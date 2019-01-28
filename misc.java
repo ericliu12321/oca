@@ -40,3 +40,19 @@ class Office {
 
 //prog.java:4: error: variable i might not have been initialized
 //    System.out.println(i);
+
+/****************************************************************************/
+//correct program
+class Office {
+  public static void main(String[] args) {
+   int i;
+   i = 
+   3;
+   i= /* 38 */ 74;  //print 74
+   String name = "this"+"a /*blha*"+" test";  
+   String course=//this is comment
+     "Math";
+    
+   System.out.println(i);
+  }
+}
