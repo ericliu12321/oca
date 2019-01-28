@@ -1,0 +1,13 @@
+class Pencil {}
+class ColorPencil extends Pencil {
+    String color;
+    ColorPencil(String color) {
+        this.color=color;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        ColorPencil v1=new ColorPencil("blue");
+    }
+}
