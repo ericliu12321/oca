@@ -18,7 +18,7 @@ class Office {
     Employee emp=new Employee();   //wont compile.
   }
 }
-    
+/******************************************************************************/    
 //import an entire package
 import graphics.*;
 
@@ -29,7 +29,7 @@ import graphics.*;
 import java.awt.*   
 import java.awt.color.*  
 import java.awt.font.*
-
+/******************************************************************************/  
 class Office {
   public static void main(String[] args) {
     int i;
