@@ -56,3 +56,29 @@ class Office {
    System.out.println(i);
   }
 }
+/****************************************************************************/
+//array declar
+int[] arr;
+int arr[];
+
+//array creation
+arr = new int[10];
+
+//arr initialization
+arr[0]=1;
+arr[1]=2;
+arr[3]=3;
+
+int[] anArray = {1,2,3,4,5};
+
+class MultiDimArrayDemo {
+    public static void main(String[] args) {
+        String[][] names = { {"Mr. ", "Mrs. ", "Ms. "}, {"Smith", "Jones"} };
+        // Mr. Smith
+        System.out.println(names[0][0] + names[1][0]);
+        // Ms. Jones
+        System.out.println(names[0][2] + names[1][1]);
+    }
+}
+
+
