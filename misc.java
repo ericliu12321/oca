@@ -30,6 +30,7 @@ import java.awt.*
 import java.awt.color.*  
 import java.awt.font.*
 /******************************************************************************/  
+//local variable is not initalized, print it will cause error
 class Office {
   public static void main(String[] args) {
     int i;
