@@ -1,0 +1,10 @@
+interface Jumpable {}
+class Animal {}
+class Lion extends Animal implements Jumpable {}
+
+public class Main { 
+    public static void main(String[] args) { 
+        Jumpable var6=(Jumpable) (new Animal());
+        System.out.println("test");
+    } 
+} 
