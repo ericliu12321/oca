@@ -11,7 +11,6 @@
 //case n:   # n has to be constant during the comiling time. 
 //last case: break is optional because the code comes to the end anyway
 
-
 public class Main { 
     public static void main(String[] args) { 
         int x = 2;
