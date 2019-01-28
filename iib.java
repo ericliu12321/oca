@@ -1,4 +1,5 @@
 //The Java compiler copies initializer blocks into every constructor. Therefore, this approach can be used to share a block of code between multiple constructors.
+//initialization block will execute before constructor
 
 class GFG
 { 
