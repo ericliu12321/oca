@@ -26,6 +26,16 @@ import graphics.*;
 //example: java API has java.awt package, java.awt.color package, java.awt.font package.
 //those are for organizing purpose, java.awt pacakage doesn't include java.awt.color or java.awt.font
 
-import java.awt.*   /*only include the classess under java.awt, not package undernether such as java.awt.color or java.awt.font*/
+import java.awt.*   
 import java.awt.color.*  
 import java.awt.font.*
+
+class Office {
+  public static void main(String[] args) {
+    int i;
+    System.out.println(i);
+  }
+}
+
+//prog.java:4: error: variable i might not have been initialized
+//    System.out.println(i);
