@@ -9,6 +9,14 @@
 
 //String: immutable
 
+//defaut value
+char: \u0000
+byte,short,int: 0
+long: 0L
+float: 0.0f
+double: 0.0d
+boolean: false
+object: null
 
 
 // The number 26, in decimal
