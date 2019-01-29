@@ -80,5 +80,23 @@ class MultiDimArrayDemo {
         System.out.println(names[0][2] + names[1][1]);
     }
 }
+/****************************************************************************/
+//for-each loop cannot be used to initialize or change the array element
+
+public class Gosling { 
+  public static void main(String[] args) {
+     int[] arr={1,2,3,4,5};
+     for (int i: arr) {
+        i=1;
+     }
+     for (int i: arr) {
+        System.out.println(i);   //1,2,3,4,5
+     }     
+     
+  }
+}
+
+
+
 
 
