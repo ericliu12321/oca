@@ -19,10 +19,7 @@ class A3 {
       
       for (Object obj: arr) {
          if (obj instanceof X) {
-          System.out.println(((X)obj).x);     
-		  
-		  System.out.println("The object's" + " class is " + obj.getClass().getSimpleName());
-		  
+          System.out.println((X)obj.x);     	  
           }
       }
       System.out.println("test");
