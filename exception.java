@@ -1,10 +1,4 @@
 /*
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at GFG.method2(File.java:14)
-	at GFG.method1(File.java:10)
-	at GFG.main(File.java:7)
-*/
-/*
   Checked Exception: java.lang.Exception other than java.lang.RuntimeException)
   public FileInputStream(File file) throws FileNotFoundException
   
@@ -27,6 +21,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
  ArraylndexOutOfBoundsException: when access array 
  IndexOutOfBoundsException: When access ArrayList 
 */
+
 
 import java.io.*;
 
@@ -59,8 +54,7 @@ public class ListAccess {
 class Ink{}
 class Colorlnk extends Ink{}
 class Blacklnk extends Ink{}
-				       
-				       
+				       				       
 				       
 //checked Exception: either handle(try/catch) or throw 				       
 import java.io.FileNotFoundException;
@@ -86,6 +80,9 @@ public class MyTestMain {
 			// System.err.println(e.toString());
 			e.printStackTrace();
 		}
+	}
+	public static void test() {
+		
 	}
 }
 				       
