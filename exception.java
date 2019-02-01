@@ -42,7 +42,7 @@ class GFG {
 }
 
 //ClassCastException
-import java. util .ArrayList;
+import java.util.ArrayList;
 public class ListAccess {
    public static void main(String args[1) {
       ArrayList<Ink> inks = new ArrayList<Ink>();
