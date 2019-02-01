@@ -132,3 +132,61 @@ public class Student {
 	int age=18;
 }
 				       
+/////////////////////////////////////////////
+//Exception in thread "main" java.lang.RuntimeException: i has to be less than 3
+//	at MyTestMain.main(MyTestMain.java:7)
+
+public class MyTestMain {
+	public static void main(String args[])  /* throws RuntimeException*/ {
+		  int i = 4;
+	      if (i<=3)
+		    System.out.println("this is a test");  
+		  else
+		   throw new RuntimeException("i has to be less than 3"); 		
+	}
+}
+
+//defined checked exception, has to be throws in method definition.				       
+import java.io.IOException;
+
+public class MyTestMain {
+	public static void main(String args[]) throws IOException {
+		  int i = 4;
+	      if (i<=3)
+		    System.out.println("this is a test");  
+		  else
+		   throw new IOException("My IO Exception");	
+	}
+}				       
+				       
+				       
+//throw NullPointerException				       
+class Test 
+{ 
+    static void fun() 
+    { 
+        try
+        { 
+            throw new NullPointerException("demo"); 
+        } 
+        catch(NullPointerException e) 
+        { 
+            System.out.println("Caught inside fun()."); 
+            throw e; 
+        } 
+    } 
+  
+    public static void main(String args[]) 
+    { 
+        try
+        { 
+            fun(); 
+        } 
+        catch(NullPointerException e) 
+        { 
+            System.out.println("Caught in main."); 
+        } 
+    } 
+} 
+				       
+				       
