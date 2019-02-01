@@ -21,7 +21,7 @@
  ArraylndexOutOfBoundsException: when access array 
  IndexOutOfBoundsException: When access ArrayList 
 */
-
+//////////////////////////////////////  Checked Exception ///////////////////////////////////////////////	
 //checked Exception: either handle(try/catch) or throw 				       
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -52,24 +52,28 @@ public class MyTestMain {
 	}
 }
 
-//ArraylndexOutOfBoundsException, NullPointerException
-import java.io.*;
+//////////////////////////////////////  RuntimeException ///////////////////////////////////////////////	
+
+//IndexOutOfBoundsException, ArraylndexOutOfBoundsException, NullPointerException
+import java.util.*;
 
 class GFG {
 	public static void main (String[] args) {
-       method1();
-	}
-	public static void method1() {
-	    method2();
-	}
-	public static void method2() {	
 	    String[] s={"abc","xyz"};
-	    System.out.println(s[8]);  // ArraylndexOutOfBoundsException
+	    //System.out.println(s[8]);  // ArraylndexOutOfBoundsException
 		
-	    String s=null;
-	    System.out.println(s.length());  // java.lang.NullPointerException		
-	}
+	    String s1=null;
+	    //System.out.println(s1.length());  // java.lang.NullPointerException		
+		
+	    ArrayList<String> arr=new ArrayList<String>();
+	    arr.add("str0");
+	    //System.out.println(arr.get(1));  //IndexOutOfBoundsException
+	    
+	    int i=3/0;
+	    System.out.println(i);  //java.lang.ArithmeticException: / by zero
+	}	
 }
+
 
 //ClassCastException
 import java.util.ArrayList;
@@ -84,9 +88,17 @@ public class ListAccess {
 class Ink{}
 class Colorlnk extends Ink{}
 class Blacklnk extends Ink{}
-				       				       
+
+//NumberFormatException			       		       
+class GFG {
+	public static void main (String[] args) {
+	    int num=Integer.parseInt("10d"); //ava.lang.NumberFormatException: For input string: "10d"
+	    System.out.println(num);
+	}
+}	       
+
 				       
-			       
+//////////////////////////////////////  Error ///////////////////////////////////////////////					       
 //StackOverflowError
 class GFG {
 	public static void main (String[] args) {
@@ -107,7 +119,7 @@ class GFG {
       }
 	}
 }
-
+		       
 //Exception in thread "main" java.lang.NoClassDefFoundError: Student				    
 //compile these 2 classes, then remove Student.class			       
 public class MyTestMain {
