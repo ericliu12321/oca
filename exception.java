@@ -96,5 +96,15 @@ class GFG {
 	}
 }
 
+//OutOfMemoryError
+class GFG {
+	public static void main (String[] args) {
+	  int size=100000000;
+      int[] arr=new int[size];
+      for (int i=0; i<size; i++) {  // java.lang.OutOfMemoryError: Java heap space
+          arr[i]=0;
+      }
+	}
+}
 				       
 				       
