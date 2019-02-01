@@ -107,5 +107,16 @@ class GFG {
       }
 	}
 }
-				       
+
+//Exception in thread "main" java.lang.NoClassDefFoundError: Student				    
+//compile these 2 classes, then remove Student.class			       
+public class MyTestMain {
+	public static void main(String args[]) {
+		Student s = new Student();
+		System.out.println(s.age);
+	}
+}
+public class Student {
+	int age=18;
+}
 				       
