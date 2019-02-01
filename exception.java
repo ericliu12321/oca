@@ -22,7 +22,37 @@
  IndexOutOfBoundsException: When access ArrayList 
 */
 
+//checked Exception: either handle(try/catch) or throw 				       
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 
+public class MyTestMain {
+	public static void main(String args[]) {
+		try {
+			RandomAccessFile raf = new RandomAccessFile("c:/temp/test.txt", "r");
+			int size = 10;
+			byte b[] = new byte[size];
+			raf.readFully(b, 0, size);
+			for (byte i : b) {
+				System.out.print((char) i);
+			}
+		} catch (FileNotFoundException e) {
+			System.err.println("File not found");
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.err.println("IC Error");
+			// System.err.println(e.toString());
+			e.printStackTrace();
+		}
+	}
+	public static void test() {
+		
+	}
+}
+
+//ArraylndexOutOfBoundsException, NullPointerException
 import java.io.*;
 
 class GFG {
@@ -56,36 +86,7 @@ class Colorlnk extends Ink{}
 class Blacklnk extends Ink{}
 				       				       
 				       
-//checked Exception: either handle(try/catch) or throw 				       
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-
-public class MyTestMain {
-	public static void main(String args[]) {
-		try {
-			RandomAccessFile raf = new RandomAccessFile("c:/temp/test.txt", "r");
-			int size = 10;
-			byte b[] = new byte[size];
-			raf.readFully(b, 0, size);
-			for (byte i : b) {
-				System.out.print((char) i);
-			}
-		} catch (FileNotFoundException e) {
-			System.err.println("File not found");
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		} catch (IOException e) {
-			System.err.println("IC Error");
-			// System.err.println(e.toString());
-			e.printStackTrace();
-		}
-	}
-	public static void test() {
-		
-	}
-}
-				       
+			       
 //StackOverflowError
 class GFG {
 	public static void main (String[] args) {
