@@ -86,4 +86,15 @@ public class MyTestMain {
 	}
 }
 				       
+//StackOverflowError
+class GFG {
+	public static void main (String[] args) {
+       method1();
+	}
+	public static void method1() {    //java.lang.StackOverflowError
+	    method1();    
+	}
+}
+
+				       
 				       
