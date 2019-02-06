@@ -10,6 +10,7 @@
     ArithmeticException
     NullPointerException
     NumberFormatException
+    StringIndexOutOfBoundsException
   
   Error:  java.lang.Error
     StackOverf lowError
@@ -71,6 +72,9 @@ class GFG {
 	    
 	    int i=3/0;
 	    System.out.println(i);  //java.lang.ArithmeticException: / by zero
+		
+	    String a="abcd";
+            String b=a.substring(5);  //StringIndexOutOfBoundsException	
 	}	
 }
 
