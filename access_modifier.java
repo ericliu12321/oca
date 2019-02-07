@@ -6,7 +6,7 @@ class constructor: public, protected, default, private
 
 --- abstract, static, final
 Class:
-abstract class: has to be extended, cannot create instance obj from it
+abstract class: has to be extended, cannot create instance obj from it, may or maynot have abstract method
 final class: cannot be extended
 *** static: never applied to top level class/interface
 
