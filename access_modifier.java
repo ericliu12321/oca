@@ -22,6 +22,13 @@ static: class variable (can only access static method)
 
 */
 
+/* interface 
+interface: public or default
+method: public abstract (implicitly)
+variable: public static final
+*/
+
+
 //example 
 final class Person {}
 class Professor extends Person {}  //wont compile, try to subclass from final class.
