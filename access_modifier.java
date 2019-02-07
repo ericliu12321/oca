@@ -18,7 +18,7 @@ final method: method cannot be overriden
 Variable:
 *** abastract: not applicable in any case 
 final: can be assigned only once (either directly or in the init block or constructor, no regular method)
-static: class variable
+static: class variable (can only access static method)
 
 */
 
