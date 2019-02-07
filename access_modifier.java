@@ -25,7 +25,7 @@ static: class variable (can only access static method)
 /* interface 
 interface: public or default
 method: public abstract (implicitly)
-variable: public static final (implicitly)
+variable: called constant, public static final (implicitly)
 */
 
 
