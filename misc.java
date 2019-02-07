@@ -81,7 +81,7 @@ class MultiDimArrayDemo {
     }
 }
 /****************************************************************************/
-//for-each loop cannot be used to initialize or change the array element
+//enhanced for loop cannot be used to initialize or change the array element
 
 public class Gosling { 
   public static void main(String[] args) {
