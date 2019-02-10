@@ -6,7 +6,7 @@ interface Predicate<T> {
 }
 */
 
-
+import java.util.function.*;
 public class A { 
     public static void main(String[] args) 
     { 
