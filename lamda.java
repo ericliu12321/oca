@@ -6,6 +6,18 @@ interface Predicate<T> {
 }
 */
 
+
+public class A { 
+    public static void main(String[] args) 
+    { 
+        Predicate<Integer> lessthan = (i) -> i < 18;  
+
+        System.out.println(lessthan.test(10));  
+    } 
+} 
+
+//////////////////////////////////////////////
+
 public class Person {
 
     public enum Sex {
