@@ -17,12 +17,12 @@ public class A {
     } 
 } 
 
-
+/*
 () -> System.out.println("Zero parameter lambda");
 (p) -> System.out.println("One parameter: " + p);
 p->System.out.println("One parameter: " + p);
 (p1, p2) -> System.out.println("Multiple parameters: " + p1 + ", " + p2);
-
+*/
 
 //////////////////////////////////////////////
 
