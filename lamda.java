@@ -10,6 +10,7 @@ public class A {
     public static void main(String[] args) 
     { 
          Predicate<Integer> lessthan = (i) -> i < 18;  
+       // Predicate<Integer> lessthan = (int i) -> i < 18;  	    
        // Predicate<Integer> lessthan = i -> i < 18;  
        // Predicate<Integer> lessthan = (i) -> { return i < 18;}  ;
         
